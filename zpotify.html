@@ -1,29 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>zpotify</title>
+    <title>ZPOTIFY</title>
+    <link rel="stylesheet" href="./estilo3.css">
 </head>
+
 <body>
     <main>
-        <section>
-
-
-
-            
+        <section class="caja-principal">
+            <header class="titulo">
+                <h1> Tus artistas favoritos </h1>
+            </header>
+            <section class="artistas">
+                <article class="artista-1">
+                    <p style=" color:white ">Depeche Mode</p> <img
+                        src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2017/07/06/14993555137182.jpg"
+                        alt="Depeche Mode">
+                </article>
+                <article class="artista-2">
+                    <p style=" color:white">Madonna</p> <img
+                        src="https://www.nacion.com/resizer/abO84flvGnlBGCkSZtZORxkHXjY=/600x0/center/middle/filters:quality(100)/arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/FDLVVCDN7BDXJJBD67UUD5LE54.jpg"
+                        alt="Madonna">
+                </article>
+                <article class="artista-3">
+                    <p style=" color:white">Pantera</p><img
+                        src="https://4.bp.blogspot.com/-DwyUd1_-X_E/V64GLEYyxuI/AAAAAAAAJPY/CrF8v9tqYQopQMamVDPiFysWTU8P_uYFQCLcB/s1600/panterasouthernouttakes.jpg"
+                        alt="Pantera">
+                </article>
+                <article class="artista-4">
+                    <p style=" color:white">Nano Stern</p> <img
+                        src="data:image/jpeg;base64,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"
+                        alt="Nano Stern">
+                </article>
+                <article class="artista-5">
+                    <p style=" color:white">The beattles</p> <img
+                        src="https://img.discogs.com/izOOUp-YnMh4pgn8hKFk_IcXH1s=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-82730-1319532331.jpeg.jpg"
+                        alt="The beattles">
+                </article>
+                <article class="artista-6">
+                    <p style=" color:white">Pear Jam</p> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Pearljam-binaural.jpg" alt="Pearl Jam">
+                </article>
+                <article class="artista-7">
+                    <p style=" color:white">Iron Maiden</p><img
+                        src="https://redgol.cl/__export/1571107413444/sites/redgol/img/2019/10/14/afiche-ironmaidenenchile-movistararena-soldout_1_crop1571107210948.jpg_1005196607.jpg"
+                        alt="Iron Maiden">
+                </article>
+                <article class="artista-8">
+                    <p style=" color:white">Liquid Tension</p><img
+                        src="http://1.bp.blogspot.com/-FKrQiMgDsrQ/UTFugegaQVI/AAAAAAAAAR0/2ewAqtViX88/s1600/Cover.jpg"
+                        alt=" Liquid Tension Experimental">
+                </article>
+                <article class="artista-9">
+                    <p style=" color:white">Led Zepelin</p><img
+                        src="http://dis.resized.images.s3.amazonaws.com/540x540/88006.jpeg" alt="Led Zepelin">
+                </article>
+                <article class="artista-10">
+                    <p style="color: white;">Makiza</p><img
+                        src="https://direct.rhapsody.com/imageserver/images/Art.119494144/356x237.jpg" alt="Makiza">
+                </article>
+                <article class="artista-11">
+                    <p style="color: white;">Los Pericos</p><img
+                        src="https://www.caratulas.com/caratulas/P/pericos/pericos-el_ritual_de_los_pericos-Frontal.jpg"
+                        alt="Los Pericos">
+                </article>
+                <article class="artista-12">
+                    <p style="color: white;">Madonna</p><img
+                        src="https://s3-alpha-sig.figma.com/img/4ff2/b2d4/f7c25d5596780f2113ad30ee5a31c4b2?Expires=1577059200&Signature=J7GUCPIHt1aue1pigbO4MyVQgmuQvuuAT3y46z7oCqKXLU1QIGaG0WZLWYp2Y~fdcafONIqsF2z~liSHVbDdxUObdeGP7lGcO~67bCvgN6Knu2Im1~Pi4PBWuVi0McQ97Xo~4giD4LhbUjdKqNtgpr7xNyrnJqt5Lqc13mRscVCD34mWgMmkju4~KVXGtqfLxWqy~X6kVbXbFi1iZanFmQGXlfcOdV4xC1u2cdOO8rLT-rPopPUcox18ynqH2xwI7D53Ov~jIsNIlItLqk533NWCM2NrgNxwLxpfQjGoIMbPl7mqatKlOLoHw-cnm1DOu9pINXhWOgcSzhLSUFj~3A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                        alt="Madonna">
+                </article>
+                <article class="artista-13">
+                    <p style="color: white;">Emperor</p><img
+                        src="https://s3-alpha-sig.figma.com/img/f1d2/5420/1ee4ddd34e34d5408ca63d79f87e6400?Expires=1577059200&Signature=XQCxN-qLM37bkNvaQbbf2A7Pik95Qy5xhHE5grh6zvpHXnY~a515Ltfa46ij1Pqptl6~CVq6KHdpqJhbaGO7FXW7XtjVH118zKvw-Dzrig0406Pkc17CP2piYmkRtIkK1Ifn8BVAR9xVBswSP1EkgKffGz6gvNYFgySDOvi~sUkLFxjV-LCwyl6YFsnRPu68XEJSf6B4QPy~EYWPO79jSO6KTyRokWt12o8FIe68upPgqZggt2QTRapu1ICzcu3lxegWGDo683gVQjw6t73npkmHp370UVZxFz~j~-4aGGSXLzqhvybGnihjxPctZMB08dw~CIU0oJyIuegUpXr24A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                        alt="Emperor">
+                </article>
+                <article class="artista-14">
+                    <p style="color: white;">Nile</p><img
+                        src="https://s3-alpha-sig.figma.com/img/0cfe/c6f1/9647d297dc1df900d0bff8f0a706b95a?Expires=1577059200&Signature=CHK5ixdzUmEuAR426XRe77fltaEUAjzzUQg5uTmiuQdi3Hmd0ervTmBQDD9t0-K35gxBFr3b-hWRSEMbBRWaA1PaEBTSnlQc8dS6i43VAo~qJJCVHUUcCQWvBkKrlorKDFnuf6rDvb-1Th2fH0SYQu4Cpk5odgLnVfrDbm21xhzxK~NAu8E2XFIunTtkxp3AkdMFOzSQcj9wHylhDAO-WHCagrbKO9Tgs~bQxYFdTZQ~ecaMoMYtgI-ZLSqRsmt2NvSPZMw5vQyigqP0cNeHeO0-QjQnBQ9DlBQ5l6TAynJQ1LaVempaIR-dfhYw1zTtEZ9fwATYnZ3ftEI2je6D7w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                        alt="Nile">
+                </article>
+                <article class="artista-15">
+                    <p style="color: white;">Dhuncan Dhu</p> <img
+                        src="https://s3-alpha-sig.figma.com/img/ac05/d3f4/dd8cd9d1211f213e721df842e780293b?Expires=1577059200&Signature=SS8lUlVzOBJWZgOk3fPd-QiKUVtpaSutxklIa-4uh8DKUq9Fs0hHhgkwt~KtTwmq9e5DBjpfxUaAqWXNWMoQXDXzlw4lE9HH~nQ8KeJt6Z6T~CzQPfSbqCzPFEOwpTG884fSQqjaF0iPhkKNk5Xh-ruFp6FHJWtWzPsVQpPctdgeE~7LNhE0TCHZgmw3ymlhQGXbwqujzux7UQzEJLWBlx-wnc005IG43aRjcR3~gC0QH6V4GQIkxqqJo2CuNC8H4y1JBOrK0qQbYgfoyF2RwAwv0iXhsU9HpLD~DMzgxk8hB6qTYNM8kFQJjqjfuoqNudmwmClz53P3a5TSDslKgQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                        alt="Dhuncan Dhu">
+                </article>
+            </section>
         </section>
-
-
-
-
 
     </main>
 
-
-
-
-
 </body>
+
 </html>
