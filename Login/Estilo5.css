@@ -3,63 +3,63 @@ main {
 }
 body{
 position: relative;
-width: 1109px;
-height:800px;
+width: 1100px;
+height:750px;
 left: 700px;
 top: 80px;
 border-style: solid;
-border 10px;
 border-color: red;
+border-width: 5px;
 }
 header{
     position: relative;
     border-style: solid;
-    width: 1101px;
-    height:200px;
-    border 5px;
+    width: 1089.5px;
+    height:150.5px;
     border-color:#B10FCB;
+    border-width: 5px;
 }
 main {
     position: relative;
     display: grid;
     grid-template-columns: 35% 65%;
-    width: 1100px;
-    height:585px;
+    width: 1096px;
+    height:580px;
     border-style: solid;
-    border 5px;
     border-color:#74E6FF;
+    border-width: 5px;
 }
 .derecha {
     position: relative;
     border-style: solid;
-    width: 375px;
-    height:575px;
-    border 5px;
+    width: 373px;
+    height:570px;
     border-color:#5DFF11;
+    border-width: 5px;
 }
 .izquierda {
     position: relative;
     border-style: solid;
     width: 704px;
-    height:575px;
-    border 5px;
+    height:571px;
     border-color:#231FFF;
+    border-width: 5px;
 }
 .superior{
     position: relative;
     border-style: solid;
-    width: 700px;
-    height:200px;
-    border 5px;
+    width: 693px;
+    height:120px;
     border-color: #FF8A1F;
+    border-width: 5px;
 }
 .inferior{
     position: relative;
     border-style: solid;
-    width: 700px;
-    height:358px;
-    border 5px;
+    width: 693px;
+    height:430px;
     border-color: #FF1FF6;  
+    border-width: 5px;
 }
 
 p{
