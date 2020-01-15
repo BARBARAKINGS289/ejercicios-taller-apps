@@ -11,7 +11,7 @@ function mostrarDatos() {
     option.value = '';
     option2.value = "";
     option.focus();
-    if (textValue1 === 'barbarareyes289@gmail.com' && textValue2 === 'barbara') {
+    if (textValue1 === 'ejemplo@gmail.com' && textValue2 === '123456') {
         console.log('Permiso concedido para ingresar al sistema');
     } else {
 
