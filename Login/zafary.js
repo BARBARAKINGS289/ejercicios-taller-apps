@@ -13,8 +13,10 @@ function mostrarDatos() {
     option.focus();
     if (textValue1 === 'ejemplo@gmail.com' && textValue2 === '123456') {
         console.log('Permiso concedido para ingresar al sistema');
+        document.getElementById("error").innerHTML = " ";
     } else {
 
         console.log('Permiso denegado- credenciales incorrectas');
+        document.getElementById("error").innerHTML = "Permiso denegado- credenciales incorrectas";
     }
 }
